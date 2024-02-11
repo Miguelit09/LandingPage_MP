@@ -4,57 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./assets/styles.css">
   <title>Landing</title>
 </head>
 
-<body>
-  <header>
-    <a href="">
-      <img src="./assets/logo.png" alt="Logo">
-    </a>
-    <h1>Bienvenido a Santandeportes. Aquí encontrarás los mejores eventos deportivos de todo Santander</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Iniciar sesión</a>
-        </li>
-        <li>
-          <a href="#">Registrarse</a>
-        </li>
-      </ul>
-    </nav>
+<body class="cuerpo">
+  <header class="encabezado">
+    <div class="contenedor contenedor_encabezado">
+      <a href="index.html">
+        <img src="./assets/logo.png" alt="Logo">
+      </a>
+      <h1 class="letra_blanca">Bienvenido a Santandeportes. Aquí encontrarás los mejores eventos deportivos de todo
+        Santander</h1>
+      <nav class="botones_encabezado">
+
+        <a href="#" class="boton_iniciar_sesion">
+          Iniciar Sesión
+        </a>
+
+        <a href="#" class="boton_registrarse">
+          Registrarse
+        </a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section>
-      <h2>¡Todo en un mismo lugar!</h2>
-      <article>
-        <figure>
-          <img src="./assets/noticias.png" alt="noticias">
-        </figure>
-        <a href="#noticias">Noticias</a>
-      </article>
-      <article>
-        <figure>
-          <img src="./assets/eventos.png" alt="eventos">
-        </figure>
-        <a href="#eventos">Eventos</a>
-      </article>
-      <article>
-        <figure>
-          <img src="./assets/participa.png" alt="participa">
-        </figure>
-        <a href="#eventos">Participa</a>
-      </article>
-      <article>
-        <figure>
-          <img src="./assets/publica tus competencias.png" alt="publica tus competencias">
-        </figure>
-        <a href="">Publica tus competencias</a>
-      </article>
+  <main class="principal">
+    <section class="seccion_inicio">
+      <h2 class="subtitulo">¡<span class="palabras_resaltadas">Todo</span> en un mismo lugar!</h2>
+      <div class="contenedor tarjetas_inicio">
+        <a href="#noticias">
+          <article class="tarjeta">
+            <figure>
+              <img src="./assets/noticias.png" alt="noticias">
+            </figure>
+            <p>Noticias</p>
+          </article>
+        </a>
+        <a href="#eventos">
+          <article class="tarjeta">
+            <figure>
+              <img src="./assets/eventos.png" alt="eventos">
+            </figure>
+            <p>
+              Eventos
+            </p>
+          </article>
+        </a>
+        <a href="#eventos">
+          <article class="tarjeta">
+            <figure>
+              <img src="./assets/participa.png" alt="participa">
+            </figure>
+            <p>Participa</p>
+        </a>
+        <a href="">
+          </article>
+          <article class="tarjeta">
+            <figure>
+              <img src="./assets/publica tus competencias.png" alt="publica tus competencias">
+            </figure>
+            <p>Publica tus competencias</p>
+          </article>
+        </a>
+      </div>
     </section>
     <section id="noticias">
-      <h2>Las noticias deportivas más recientes en nuestro departamento</h2>
+      <h2>Las <span class="palabras_resaltadas">noticias deportivas</span> más recientes en nuestro departamento</h2>
       <article>
         <figure>
           <img src="./assets/seccion noticias.jpg" alt="Sección noticias">
@@ -79,7 +98,7 @@
       </article>
     </section>
     <section id="eventos">
-      <h2>Prepárate para ser parte de las mejores competencias deportivas</h2>
+      <h2>Prepárate para ser parte de las mejores <span class="palabras_resaltadas">competencias deportivas</span></h2>
       <article>
         <figure>
           <img src="./assets/seccion eventos.jpg" alt="Sección eventos">
@@ -101,11 +120,11 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquid voluptatem atque nulla saepe vitae
           ex, doloribus voluptates impedit aliquam minus sed non nesciunt ad sint ipsa velit accusantium dignissimos.
         </p>
-        <button>Inscribirme</button>
+        <a href="#" class="boton_inscribirme">Inscribirme</a>
       </article>
     </section>
   </main>
-  <footer>
+  <footer class="pie_de_pagina">
     <article>
       <p>Un cuerpo sano es una mente sana. ¡Anímate a participar!</p>
     </article>

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+  width: 120px;
+}
+
+a {
+  text-decoration: none;
+  color: #1B202A;
+}
+.encabezado, .pie_de_pagina{
+  background-color: #AE1603;
+}
+.cuerpo {
+  background-color: #5EB3FF;
+}
+.contenedor {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.contenedor_encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botones_encabezado {
+  display: flex;
+  gap: 2em;
+}
+
+.letra_blanca {
+  color: #EAE4E4;
+  font-size: 24px;
+}
+.lista_encabezado {
+  list-style: none;
+}
+.boton_iniciar_sesion, .boton_registrarse, .boton_inscribirme{
+  background-color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #1B202A;
+  border-radius: 8px;
+  border: 1px solid #1B202A;
+}
+
+.boton_iniciar_sesion {
+  background-color: #F09E1C;
+}
+
+.boton_registrarse {
+  background-color: #A6DB57;
+}
+
+.boton_inscribirme {
+  background-color: #AE1603;
+  color: #EAE4E4;
+}
+
+.seccion_inicio {
+  margin: 80px auto;
+  max-width: 1000px;
+}
+
+.subtitulo {
+  text-align: center;
+}
+
+.tarjetas_inicio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px auto;
+}
+
+.tarjeta{
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #F09E1C;
+}
+
+.palabras_resaltadas {
+  color: #F09E1C;
+}
+
+/* crecer las imagenes de las tarjetas */
+
