@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
+  color: #1B202A;
 }
 
 a {
@@ -23,7 +24,7 @@ a {
 .contenedor {
   max-width: 1800px;
   margin: 0 auto;
-  max-height: 300px;
+  max-height: 700px;
 }
 .contenedor_encabezado {
   display: flex;
@@ -39,6 +40,7 @@ a {
 .letra_blanca {
   color: #EAE4E4;
   font-size: 24px;
+  min-width: 1100px;
 }
 .lista_encabezado {
   list-style: none;
@@ -49,7 +51,12 @@ a {
   border-radius: 8px;
   border: 1px solid #1B202A;
   text-align: center;
-  width: 152px;
+  min-width: 152px;
+  max-height: 44px;
+}
+
+.boton_iniciar_sesion:hover, .boton_registrarse:hover, .boton_inscribirme:hover{
+  transform: scale(1.2);
 }
 
 .boton_iniciar_sesion {
@@ -60,18 +67,34 @@ a {
   background-color: #A6DB57;
 }
 
+.contenedor_inscribirme {
+  display: flex;
+  justify-content: center;
+}
 .boton_inscribirme {
   background-color: #AE1603;
   color: #EAE4E4;
+  line-height: 18px;
 }
 
 .seccion {
-  margin: 80px auto;
+  margin: 140px auto;
 }
 
 .subtitulo {
   text-align: center;
+  font-size: 40px;
+}
+
+.titulo_noticia, .titulo_competencia {
   font-size: 32px;
+}
+
+.texto_normal {
+  font-size: 20px;
+  max-width: 720px;
+  margin: auto;
+
 }
 
 .tarjetas_inicio{
@@ -98,7 +121,7 @@ a {
 }
 
 
-.noticias {
+.noticias, .eventos{
   text-align: center;
   line-height: 60px;
   margin: 70px auto;
@@ -120,7 +143,12 @@ a {
 
 .flecha {
   border-radius: 56px;
-  border: none;
+  border: none;;
+}
+
+.flecha:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .bi-arrow-left, .bi-arrow-right{
