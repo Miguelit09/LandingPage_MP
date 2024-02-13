@@ -16,7 +16,7 @@
   <header class="encabezado">
     <div class="contenedor contenedor_encabezado">
       <a href="index.html">
-        <img src="./assets/logo.png" alt="Logo">
+        <img src="./assets/logo.png" alt="Logo" class="logo">
       </a>
       <h1 class="letra_blanca">Bienvenido a Santandeportes. Aquí encontrarás los mejores eventos deportivos de todo
         Santander</h1>
@@ -33,13 +33,13 @@
     </div>
   </header>
   <main class="principal">
-    <section class="seccion_inicio">
+    <section class="seccion">
       <h2 class="subtitulo">¡<span class="palabras_resaltadas">Todo</span> en un mismo lugar!</h2>
       <div class="contenedor tarjetas_inicio">
         <a href="#noticias">
           <article class="tarjeta">
             <figure>
-              <img src="./assets/noticias.png" alt="noticias">
+              <img src="./assets/noticias.png" alt="noticias" class="imagen_tarjeta">
             </figure>
             <p>Noticias</p>
           </article>
@@ -47,7 +47,7 @@
         <a href="#eventos">
           <article class="tarjeta">
             <figure>
-              <img src="./assets/eventos.png" alt="eventos">
+              <img src="./assets/eventos.png" alt="eventos" class="imagen_tarjeta">
             </figure>
             <p>
               Eventos
@@ -57,7 +57,7 @@
         <a href="#eventos">
           <article class="tarjeta">
             <figure>
-              <img src="./assets/participa.png" alt="participa">
+              <img src="./assets/participa.png" alt="participa" class="imagen_tarjeta">
             </figure>
             <p>Participa</p>
         </a>
@@ -65,28 +65,29 @@
           </article>
           <article class="tarjeta">
             <figure>
-              <img src="./assets/publica tus competencias.png" alt="publica tus competencias">
+              <img src="./assets/publica tus competencias.png" alt="publica tus competencias" class="imagen_tarjeta">
             </figure>
             <p>Publica tus competencias</p>
           </article>
         </a>
       </div>
     </section>
-    <section id="noticias">
-      <h2>Las <span class="palabras_resaltadas">noticias deportivas</span> más recientes en nuestro departamento</h2>
-      <article>
-        <figure>
-          <img src="./assets/seccion noticias.jpg" alt="Sección noticias">
+    <section id="noticias" class="seccion">
+      <h2 class="subtitulo">Las <span class="palabras_resaltadas">noticias deportivas</span> más recientes en nuestro
+        departamento</h2>
+      <article class="contenedor noticias">
+        <figure class="figure_burbuja">
+          <img src="./assets/seccion noticias.jpg" alt="Sección noticias" class="imagen_burbuja">
         </figure>
-        <div>
-          <button>
+        <div class="menu_burbujas">
+          <button class="flecha">
             <i class="bi bi-arrow-left"></i>
           </button>
-          <i class="bi bi-circle"></i>
-          <i class="bi bi-circle"></i>
-          <i class="bi bi-circle"></i>
-          <i class="bi bi-circle"></i>
-          <button>
+          <i class="bi bi-circle elemento_burbuja"></i>
+          <i class="bi bi-circle elemento_burbuja"></i>
+          <i class="bi bi-circle elemento_burbuja"></i>
+          <i class="bi bi-circle elemento_burbuja"></i>
+          <button class="flecha">
             <i class="bi bi-arrow-right"></i>
           </button>
         </div>
@@ -97,21 +98,21 @@
         </p>
       </article>
     </section>
-    <section id="eventos">
+    <section id="eventos" class="seccion">
       <h2>Prepárate para ser parte de las mejores <span class="palabras_resaltadas">competencias deportivas</span></h2>
       <article>
-        <figure>
-          <img src="./assets/seccion eventos.jpg" alt="Sección eventos">
+        <figure class="figure_burbuja">
+          <img src="./assets/seccion eventos.jpg" alt="Sección eventos" class="imagen_burbujas">
         </figure>
         <div>
-          <button>
+          <button class="flecha">
             <i class="bi bi-arrow-left"></i>
           </button>
           <i class="bi bi-circle"></i>
           <i class="bi bi-circle"></i>
           <i class="bi bi-circle"></i>
           <i class="bi bi-circle"></i>
-          <button>
+          <button class="flecha">
             <i class="bi bi-arrow-right"></i>
           </button>
         </div>
@@ -130,7 +131,7 @@
     </article>
     <article>
       <a href="index.html">
-        <img src="./assets/logo.png" alt="Logo">
+        <img src="./assets/logo.png" alt="Logo" class="logo">
       </a>
       <p>Contáctanos: </p>
       <button>

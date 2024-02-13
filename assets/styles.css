@@ -5,14 +5,15 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-img {
-  width: 120px;
-}
-
 a {
   text-decoration: none;
   color: #1B202A;
 }
+
+.logo {
+  width: 120px;
+}
+
 .encabezado, .pie_de_pagina{
   background-color: #AE1603;
 }
@@ -20,8 +21,9 @@ a {
   background-color: #5EB3FF;
 }
 .contenedor {
-  max-width: 1600px;
+  max-width: 1800px;
   margin: 0 auto;
+  max-height: 300px;
 }
 .contenedor_encabezado {
   display: flex;
@@ -42,12 +44,12 @@ a {
   list-style: none;
 }
 .boton_iniciar_sesion, .boton_registrarse, .boton_inscribirme{
-  background-color: #fff;
   padding: 12px 24px;
-  text-decoration: none;
   color: #1B202A;
   border-radius: 8px;
   border: 1px solid #1B202A;
+  text-align: center;
+  width: 152px;
 }
 
 .boton_iniciar_sesion {
@@ -63,13 +65,13 @@ a {
   color: #EAE4E4;
 }
 
-.seccion_inicio {
+.seccion {
   margin: 80px auto;
-  max-width: 1000px;
 }
 
 .subtitulo {
   text-align: center;
+  font-size: 32px;
 }
 
 .tarjetas_inicio{
@@ -86,9 +88,65 @@ a {
   background-color: #F09E1C;
 }
 
+.imagen_tarjeta {
+    width: 320px;
+    height: 200px;
+}
+
 .palabras_resaltadas {
   color: #F09E1C;
 }
 
-/* crecer las imagenes de las tarjetas */
+
+.noticias {
+  text-align: center;
+  line-height: 60px;
+  margin: 70px auto;
+}
+
+.imagen_burbuja {
+  border-radius: 160px;
+  width: 720px;
+  height: 280px;
+  border: 4px solid #1B202A;
+}
+
+.menu_burbujas {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 720px;
+}
+
+.flecha {
+  border-radius: 56px;
+  border: none;
+}
+
+.bi-arrow-left, .bi-arrow-right{
+  display: inline-flex;
+  color: #1B202A;
+  font-size: 24px;
+  background-color: #F09E1C;
+  width: 120px;
+  height: 60px;
+  border-radius: 56px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1B202A;
+}
+
+.flecha, .elemento_burbuja {
+  margin: auto 24px;
+}
+
+.elemento_burbuja {
+  color: #1B202A;
+  font-size: 24px;
+}
+.bi-circle::before{
+  background-color: #F09E1C;
+  border-radius: 12px;
+}
+
 
