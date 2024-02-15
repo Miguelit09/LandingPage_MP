@@ -131,7 +131,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 70px auto;
+  margin: 70px 40px;
 }
 
 .tarjeta{
