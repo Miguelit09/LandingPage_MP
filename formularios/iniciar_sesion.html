@@ -4,54 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/styles_forms.css">
     <title>Iniciar Sesión</title>
 </head>
 
-<body>
-    <header>
-        <a href="../index.html">
-            <img src="../assets/logo.png" alt="Logo">
-        </a>
-        <h1>Bienvenido a Santandeportes. Aquí encontrarás los mejores eventos deportivos de todo Santander</h1>
+<body class="cuerpo">
+    <header class="encabezado">
+        <div class="contenedor contenedor_encabezado">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="Logo" class="logo_encabezado">
+            </a>
+            <h1 class="letra_encabezado">Bienvenido a Santandeportes. Aquí encontrarás los mejores eventos deportivos de
+                todo Santander</h1>
+        </div>
     </header>
-    <main>
-        <form action="">
-            <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" name="correo" minlength="7" required>
-            <label for="contraseña">Contraseña</label>
-            <input type="password" id="contraseña" name="contraseña" minlength="7" required>
-            <button type="submit">Iniciar Sesión</button>
-        </form>
-        <p>Si no tienes una cuenta, <a href="./registrarse.html">haz click aquí para registrarte</a>.</p>
-        <figure>
-            <img src="../assets/logo.png" alt="Logo">
-        </figure>
+    <main class="principal">
+        <section class="seccion_formulario">
+            <div class="div_logo">
+                <figure>
+                    <img src="../assets/logo.png" alt="Logo">
+                </figure>
+            </div>
+            <div class="div_formulario">
+                <form action="">
+                    <label for="correo" class="label_campo">Correo electrónico</label>
+                    <input type="email" class="campo" id="correo" name="correo" minlength="7" required>
+                    <label for="contraseña" class="label_campo">Contraseña</label>
+                    <input type="password" class="campo" id="contraseña" name="contraseña" minlength="7" required>
+                    <button type="submit" class="boton_enviar">Iniciar Sesión</button>
+                    <p>Si no tienes una cuenta, <a href="./registrarse.html">haz click aquí para registrarte</a>.</p>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer>
-        <article>
-            <p>Contáctanos: </p>
-            <button>
-                <a href="">
-                    <i class="bi bi-envelope-at-fill"></i>
-                </a>
-            </button>
-            <button>
+    <footer class="pie_de_pagina">
+        <article class="contenedor contenedor_footer">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="Logo" class="logo_footer">
+            </a>
+            <p class="letra_footer">Contáctanos: </p>
+            <a href="" class="icono_contacto">
+                <i class="bi bi-envelope-at-fill"></i>
+            </a href="">
+            <a href="" class="icono_contacto">
                 <i class="bi bi-whatsapp"></i>
-            </button>
-            <button>
+            </a href="">
+            <a href="" class="icono_contacto">
                 <i class="bi bi-telephone"></i>
-            </button>
-            <p>Síguenos en nuestras redes sociales:</p>
-            <button>
+            </a href="">
+            <p class="letra_footer">Síguenos en nuestras redes sociales:</p>
+            <a href="" class="icono_contacto">
                 <i class="bi bi-facebook"></i>
-            </button>
-            <button>
+            </a href="">
+            <a href="" class="icono_contacto">
                 <i class="bi bi-instagram"></i>
-            </button>
-            <button>
+            </a href="">
+            <a href="" class="icono_contacto">
                 <i class="bi bi-twitter"></i>
-            </button>
+            </a href="">
         </article>
     </footer>
 </body>
