@@ -8,13 +8,29 @@
 
 a {
     text-decoration: none;
-    color: #F09E1C;
+    color: #AE1603;
+}
+
+a:hover{
+  color: #E71E05;
+}
+
+a:active{
+  color: #FF462F;
 }
 
 .logo_encabezado,
 .logo_footer {
     width: 120px;
     margin-right: 40px;
+}
+
+.encabezado{
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 .encabezado,
@@ -71,6 +87,7 @@ a {
     transform: scale(1.2);
     cursor: pointer;
     background-color: #FF9C00;
+    z-index: 1;
 }
 
 .boton_enviar:active {
@@ -111,6 +128,8 @@ a {
     border-radius: 12px;
     border: 2px solid #1B202A;
     background-color: #A6DB57;
+    padding: 16px;
+    outline: none; /*Sirve para quitarle el borde blanco del input cuando está seleccionado para escribir en él.*/
 }
 
 input[type="number"]::-webkit-inner-spin-button,

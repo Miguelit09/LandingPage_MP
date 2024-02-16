@@ -15,6 +15,14 @@ a {
   width: 120px;
 }
 
+.encabezado{
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+}
+
 .encabezado, .pie_de_pagina{
   background-color: #AE1603;
 }
@@ -58,6 +66,7 @@ a {
 .boton_iniciar_sesion:hover, .boton_registrarse:hover, .boton_inscribirme:hover, .tarjeta:hover,.flecha:hover, .icono_contacto:hover{
   transform: scale(1.2);
   cursor: pointer;
+  z-index: 1;
 }
 
 .boton_iniciar_sesion {
